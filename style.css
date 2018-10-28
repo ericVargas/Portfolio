@@ -64,7 +64,8 @@
 }
 
 .landing {
-    
+    height: 500px;
+    background-color: #e3e3e3
 }
 
 /*  BUTTON  */
@@ -83,24 +84,61 @@
 
 .button:hover {
     background-color: #ffffff;
-    color: #FCAC45;
+    color: #000000;
     border: solid 1px #FCAC45;
 }
 
 /*  ABOUT  */
 #about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 500px;
+    margin: 15px 0;
+}
+
+.about-pic {
+    margin-top: 30px;
+}
+
+.about-pic img {
+    height: 90%;
+}
+
+.about-me {
+    padding-right: 25px;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+/*  SKILLS   */
+#skills {
     
 }
 
-.about-pic {}
-
-.about-me {}
-
-#skills
-
 .section-title {}
 
-.skills-details {}
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+}
+
+.skills-detail {
+    height: 100px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.skills-detail i {
+    font-size: 3.8rem;
+}
+
+.skills-detail h3 {
+    margin-top: 10px;
+}
+
+/*  PORTFOLIO  */
 
 #portfolio {}
 
@@ -109,3 +147,122 @@
 .img-project{}
 
 #contact {}
+
+
+
+
+
+/*  SOCIAL ICONS  */
+
+.social-icon {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.social-icon:before,
+.social-icon:after {
+  content: " ";
+  display: table;
+}
+
+.social-icon:after {
+  clear: both;
+}
+
+.social-icon li {
+  display: inline-block;
+  margin: 0px 4px;
+}
+
+.social-icon li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  border: 0 none;
+  border-radius: 5px;
+  font-size: 2.5rem;
+}
+
+.social-icon li a .fa {
+  line-height: inherit;
+}
+
+.icon-link {
+  background-color: #666;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  box-sizing: content-box;
+}
+
+.icon-link.fill.linkedin {
+  background-color: #007bb6;
+}
+.icon-link.fill.linkedin:hover {
+  background-color: #fff;
+}
+.icon-link.fill.linkedin:hover .fa-linkedin {
+  color: #007bb6;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+
+.icon-link.fill.github {
+  background-color: #444444;
+}
+.icon-link.fill.github:hover {
+  background-color: #fff;
+}
+.icon-link.fill.github:hover .fa-github {
+  color: #444444;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+  
+  .icon-link:hover {
+  -webkit-transition: background-color 150ms ease-in-out;
+  transition: background-color 150ms ease-in-out;
+  height: 56px;
+  line-height: 56px;
+  width: 56px;
+  background-color: #fff;
+}
+
+.icon-link:hover.linkedin {
+  border: 2px solid #007bb6;
+}
+
+.icon-link:hover.github {
+  border: 2px solid #444444;
+}
+
+.icon-link:hover .fa-linkedin {
+  color: #007bb6;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+
+  .icon-link:hover .fa-github {
+  color: #444444;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+
+.icon-link .fa {
+  color: #fff;
+  line-height: 60px;
+  font-size: 36px;
+}
+
+footer {
+    background: #000;
+    padding: 30px 0px;
+    color: #f8f8f8;
+    font-size: 1rem;
+    margin-top: 30px;
+}
