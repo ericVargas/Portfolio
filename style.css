@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.margin-top-60 {
+    margin-top: 60px;
+}
+
+.margin-top-80 {
+    margin-top: 80px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*  TOP/LANDING  */
+.top-container {
+    height: 50px;
+    width: 100%;
+}
+
+#header {
+    width: 23%;
+    height: 30px;
+    display: block;
+    background-color: #FCAC45;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 10px 0;
+    float: left;
+}
+
+.top-container ul {
+    width: 75%;
+    background-color: #555555;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.top-container li {
+    float: right;
+    height: 50px;
+}
+
+.top-container li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.top-container li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.landing {
+    
+}
+
+/*  BUTTON  */
+.button {
+    display: inline;
+    width: 120px;
+    height: 25px;
+    background-color: #FCAC45;
+    color: #000000;
+    padding: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    border: solid 1px #555555;
+    border-radius: 28px;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #FCAC45;
+    border: solid 1px #FCAC45;
+}
+
+/*  ABOUT  */
+#about {
+    
+}
+
+.about-pic {}
+
+.about-me {}
+
+#skills
+
+.section-title {}
+
+.skills-details {}
+
+#portfolio {}
+
+.project {}
+
+.img-project{}
+
+#contact {}
