@@ -4,7 +4,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html,body {
+html,
+body {
     height: 100%;
 }
 
@@ -50,6 +51,7 @@ html,body {
     letter-spacing: 6px;
     padding-top: 24px;
 }
+
 .top-container li a {
     font-size: 0.8rem;
     font-weight: 600;
@@ -95,28 +97,28 @@ html,body {
 /*  BUTTON  */
 .button {
     display: inline-block;
-	color: #fff;
-	background: none;
-	padding: 25px 80px;
-	margin: 15px 30px;
+    color: #fff;
+    background: none;
+    padding: 25px 80px;
+    margin: 15px 30px;
     font-size: inherit;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
-	letter-spacing: 1px;
+    letter-spacing: 1px;
     border-radius: 50px;
-	border: 3px solid #fff;
-	overflow: hidden;
-	outline: none;
-	position: relative;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+    border: 3px solid #fff;
+    overflow: hidden;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .button-dark {
-	border: 3px solid #000;
-	color: #000;
+    border: 3px solid #000;
+    color: #000;
 }
 
 .button:hover {
@@ -137,11 +139,11 @@ html,body {
     position: absolute;
 }
 
-.about-me h2{
+.about-me h2 {
     padding: 0px 50px;
 }
 
-.about-me p{
+.about-me p {
     padding: 50px;
     font-size: 1rem;
     overflow: hidden;
@@ -152,7 +154,27 @@ html,body {
     background-color: var(--bg-dark);
 }
 
-.section-title {}
+.section-padding {
+    padding: 100px 0px;
+}
+
+.section-title h2 {
+    margin-top: 0;
+    font-weight: 600;
+    border-bottom: 4px double var(--my-color);
+    border-radius: 25px;
+    font-size: 1.9rem;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.section-title p {
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
 
 .details-grid {
     display: grid;
@@ -166,6 +188,7 @@ html,body {
     text-align: center;
     padding: 10px;
     font-size: 1.5rem;
+    justify-self: center;
 }
 
 .skills-detail i {
