@@ -350,7 +350,7 @@ footer {
 @media only screen and (min-width: 1100px) {
     .about-pic {
         background-position: center;
-        background-size: auto;
+        background-size: 56%;
     }
 }
 
@@ -399,6 +399,10 @@ footer {
 }
 
 @media only screen and (max-width: 555px) {
+    .landing {
+        background-attachment: scroll;
+    }
+    
     .social-icon li a {
         width: 40px;
         height: 40px;
