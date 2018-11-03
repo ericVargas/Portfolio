@@ -4,15 +4,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 :root {
     --my-color: #FCAC45;
     --bg-dark: #F9F9F9;
     /* Varibables for colors */
+}
+
+body,
+html {
+    height: 100%;
 }
 
 .margin-top-50 {
@@ -31,7 +31,20 @@ body {
     text-align: center;
 }
 
-/*  TOP/LANDING  */
+/* ------ TOP/LANDING ------ */
+.landing {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*  fixed = parallax, scroll = normal*/
+    background-attachment: fixed;
+    background-image: url('img/nyc.jpg');
+    min-height: 100%;
+}
+
 .top-container ul {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -73,28 +86,51 @@ body {
     transition: all 0.3s ease-out;
 }
 
-.landing {
-    position: relative;
-    display: table;
-    width: 100%;
-    height: 100%;
-    background: url(img/bg.jpg);
-    background-size: cover;
-    z-index: 1;
-}
-
-.landing:after {
+.land-button {
     position: absolute;
-    background: rgba(0, 0, 0, .7);
-    left: 0;
-    top: 0;
+    top: 50%;
     width: 100%;
-    height: 100%;
-    content: "";
-    z-index: -1;
+    color: #000;
+    font-size: 1.6rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    z-index: 2;
 }
 
-/*  BUTTON  */
+/*
+.land-button .button:hover {
+    background-color: rgba(252,172,69, 1.0);
+}
+*/
+
+/* ------ ABOUT ------ */
+#about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--bg-dark);
+    overflow: hidden;
+}
+
+.about-pic {
+    position: relative;
+    background-image: url(img/profile-pic.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.about-me h2 {
+    padding: 0px 50px;
+}
+
+.about-me p {
+    padding: 50px;
+    font-size: 1.2rem;
+}
+
+/* ------ BUTTON ------ */
 .button {
     display: inline-block;
     color: #fff;
@@ -122,11 +158,11 @@ body {
 }
 
 .button:hover {
-    background-color: var(--my-color);
+    background-color: rgba(252,172,69, 1.0)/*var(--my-color)*/;
     color: #fff;
 }
 
-/*  SECTIONS  */
+/* ------ SECTIONS ------ */
 .section-padding {
     padding: 80px 0px;
 }
@@ -149,34 +185,7 @@ body {
     margin-bottom: 40px;
 }
 
-/*  ABOUT  */
-#about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: var(--bg-dark);
-    overflow: hidden;
-}
-
-.about-pic {
-    position: relative;
-}
-
-.about-pic img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.about-me h2 {
-    padding: 0px 50px;
-}
-
-.about-me p {
-    padding: 50px;
-    font-size: 1.2rem;
-}
-
-/*  SKILLS   */
+/* ------ SKILLS ------ */
 #skills {
     background-color: var(--bg-dark);
 }
@@ -204,7 +213,7 @@ body {
     margin-top: 10px;
 }
 
-/*  PORTFOLIO  */
+/* ------ PORTFOLIO ------ */
 
 #portfolio {}
 
@@ -213,12 +222,13 @@ body {
 .img-project {}
 
 
-/*  CONTACT  */
+
+/* ------ CONTACT ------ */
 #contact {
     background-color: var(--bg-dark);
 }
 
-/*  SOCIAL ICONS  */
+/* ------ SOCIAL ICONS ------ */
 .social-icon {
     list-style: none;
     padding-left: 0;
@@ -328,7 +338,7 @@ body {
     font-size: 36px;
 }
 
-/*  FOOTER  */
+/* ------ FOOTER ------ */
 footer {
     background: #000;
     padding: 30px 0px;
@@ -337,6 +347,13 @@ footer {
 }
 
 /*  MEDIA QUERIES  */
+@media only screen and (min-width: 1100px) {
+    .about-pic {
+        background-position: center;
+        background-size: auto;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .top-container ul {
         grid-template-columns: repeat(5, 1fr);
@@ -362,21 +379,22 @@ footer {
         padding: 20px 15px;
     }
     
-    #about {
-        display: inline-grid;
+    .section-padding {
+        padding: 40px 0px;
     }
-/*
-    .about-pic img {
-    position: absolute;
-        top: 25%;
-        left: 10%;
-    height: 55%;
-    width: 80%;
-}
-*/
+
+    #about {
+        grid-template-columns: repeat(1, 1fr);
+        background-color: #fff;
+    }
     
+    .about-pic {
+        display: none;
+    }
+
     .details-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
     }
 }
 
@@ -398,10 +416,16 @@ footer {
         font-weight: 300;
         font-size: 0.8rem;
     }
+    
+    .about-me h2 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
 
     .about-me p {
         padding: 20px;
-        font-size: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 300;
     }
 
     .skills-detail {
@@ -415,10 +439,12 @@ footer {
     .skills-detail i {
         font-size: 3rem;
     }
-}
-
-@media only screen and (max-width: 449px) {
-    .button {
+    
+    .skills-detail h3 {
+        font-weight: 500;
+    }
+    
+     .button {
         padding: 15px 30px;
         font-weight: 600;
         font-size: 0.6rem;
