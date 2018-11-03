@@ -32,18 +32,6 @@ html {
 }
 
 /* ------ TOP/LANDING ------ */
-.landing {
-    position: relative;
-    opacity: 0.70;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    /*  fixed = parallax, scroll = normal*/
-    background-attachment: fixed;
-    background-image: url('img/nyc.jpg');
-    min-height: 100%;
-}
 
 .top-container ul {
     display: grid;
@@ -52,7 +40,7 @@ html {
     width: 100%;
     background-color: #434343;
     list-style-type: none;
-    /*    overflow: hidden;*/
+    overflow: hidden;
     text-transform: uppercase;
 }
 
@@ -85,6 +73,20 @@ html {
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
+
+.landing {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*  fixed = parallax, scroll = normal*/
+    background-attachment: fixed;
+    background-image: url('img/nyc.jpg');
+    min-height: 100%;
+}
+
 
 .land-button {
     position: absolute;
@@ -158,7 +160,9 @@ html {
 }
 
 .button:hover {
-    background-color: rgba(252,172,69, 1.0)/*var(--my-color)*/;
+    background-color: rgba(252, 172, 69, 1.0)
+        /*var(--my-color)*/
+    ;
     color: #fff;
 }
 
@@ -335,7 +339,7 @@ html {
 .icon-link .fa {
     color: #fff;
     line-height: 60px;
-    font-size: 36px;
+    font-size: 2.2rem;
 }
 
 /* ------ FOOTER ------ */
@@ -347,14 +351,14 @@ footer {
 }
 
 /*  MEDIA QUERIES  */
-@media only screen and (min-width: 1100px) {
+@media (min-width: 1100px) {
     .about-pic {
         background-position: center;
         background-size: 56%;
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 830px) {
     .top-container ul {
         grid-template-columns: repeat(5, 1fr);
         grid-auto-flow: row;
@@ -378,7 +382,9 @@ footer {
         font-weight: 500;
         padding: 20px 15px;
     }
-    
+}
+
+@media (max-width: 769px) {
     .section-padding {
         padding: 40px 0px;
     }
@@ -387,7 +393,7 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         background-color: #fff;
     }
-    
+
     .about-pic {
         display: none;
     }
@@ -398,16 +404,19 @@ footer {
     }
 }
 
-@media only screen and (max-width: 555px) {
+@media
+
+/*only screen and*/
+(max-width: 555px) {
     .landing {
         background-attachment: scroll;
     }
-    
+
     .social-icon li a {
         width: 40px;
         height: 40px;
         line-height: 40px;
-        font-size: 20px;
+        font-size: 1.2rem;
     }
 
     .section-title h2 {
@@ -420,7 +429,7 @@ footer {
         font-weight: 300;
         font-size: 0.8rem;
     }
-    
+
     .about-me h2 {
         font-size: 1rem;
         font-weight: 500;
@@ -443,14 +452,15 @@ footer {
     .skills-detail i {
         font-size: 3rem;
     }
-    
+
     .skills-detail h3 {
         font-weight: 500;
     }
-    
-     .button {
+
+    .button {
         padding: 15px 30px;
         font-weight: 600;
         font-size: 0.6rem;
     }
+
 }
