@@ -219,13 +219,24 @@ html {
 
 /* ------ PORTFOLIO ------ */
 
-#portfolio {}
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
 
-.project {}
+.project a {
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--my-color);
+    margin-top: 30px 0;
+}
 
-.img-project {}
-
-
+.project a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
 
 /* ------ CONTACT ------ */
 #contact {
