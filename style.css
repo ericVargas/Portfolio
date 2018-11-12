@@ -130,6 +130,7 @@ html {
 .about-me p {
     padding: 50px;
     font-size: 1.2rem;
+    text-align: justify;
 }
 
 /* ------ BUTTON ------ */
