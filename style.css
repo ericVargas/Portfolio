@@ -13,6 +13,8 @@
 body,
 html {
     height: 100%;
+    overflow-x: hidden;
+    /* To remove weird margin on mobile view */
 }
 
 .margin-top-50 {
