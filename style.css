@@ -13,7 +13,7 @@
 body,
 html {
     height: 100%;
-    overflow-x: hidden;
+    overflow-x: auto;
     /* To remove weird margin on mobile view */
 }
 
