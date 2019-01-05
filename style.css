@@ -13,6 +13,9 @@
 body,
 html {
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* To remove weird margin on mobile view */
 }
 
 .margin-top-50 {
@@ -87,7 +90,6 @@ html {
     min-height: 100%;
 }
 
-
 .land-button {
     position: absolute;
     top: 50%;
@@ -98,12 +100,6 @@ html {
     text-transform: uppercase;
     z-index: 2;
 }
-
-/*
-.land-button .button:hover {
-    background-color: rgba(252,172,69, 1.0);
-}
-*/
 
 /* ------ ABOUT ------ */
 #about {
@@ -226,16 +222,62 @@ html {
     grid-gap: 15px;
 }
 
+.project {
+    justify-self: center;
+}
+
+.project h2 {
+    margin-top: 20px;
+}
+
+.img-project {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    /*    background-color: red;*/
+    background-image: url(img/anatomy.gif);
+    background-size: cover;
+    transition: all 0.3s;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.img-project:hover {
+    opacity: 0.60;
+}
+
+.img-project span {
+    height: 25px;
+    width: 75px;
+    position: relative;
+    top: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    width: 100%;
+    /*    place-self: stretch center;*/
+}
+
+.img-project:hover > span {
+    visibility: visible;
+    opacity: 1;
+}
+
 .project a {
     text-decoration: none;
     font-weight: 300;
-    color: var(--my-color);
-    margin-top: 30px 0;
+    background-color: #000;
+    border-radius: 50px;
+    color: #fff;
+    padding: 10px;
+    place-self: stretch center;
 }
 
 .project a:hover {
-    font-weight: 600;
-    text-decoration: underline;
+    font-weight: 500;
+    color: var(--my-color);
+    /*    text-decoration: underline;*/
     text-decoration-color: #000;
 }
 
