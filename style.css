@@ -156,7 +156,7 @@ html {
     color: #000;
 }
 
-.button:hover {
+.button:hover, .links a:hover {
     background-color: rgba(252, 172, 69, 1.0)
         /*var(--my-color)*/
     ;
@@ -230,40 +230,33 @@ html {
     margin-top: 20px;
 }
 
-.img-project {
-    width: 200px;
-    height: 200px;
-    border: 2px solid #000;
-    border-radius: 25px;
-    /*    background-color: red;*/
-    background-image: url(img/anatomy.gif);
-    background-size: cover;
-    transition: all 0.3s;
+.links{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
-
-.img-project:hover {
-    opacity: 0.60;
-}
-
-.img-project span {
-    height: 25px;
-    width: 75px;
-    position: relative;
-    top: 50%;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
     width: 100%;
-    /*    place-self: stretch center;*/
 }
 
-.img-project:hover > span {
-    visibility: visible;
-    opacity: 1;
+.links a{
+    display: inline-block;
+    color: #000;
+    background: none;
+    padding: 5px 30px;
+    margin: 10px 5px;
+/*    font-size: inherit;*/
+    font-weight: 400;
+    text-decoration: none;
+/*    letter-spacing: 1px;*/
+    border-radius: 50px;
+    border: 2px solid #000;
+/*    overflow: hidden;*/
+/*    outline: none;*/
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
+/*
 .project a {
     text-decoration: none;
     font-weight: 300;
@@ -273,13 +266,16 @@ html {
     padding: 10px;
     place-self: stretch center;
 }
+*/
 
+/*
 .project a:hover {
     font-weight: 500;
     color: var(--my-color);
-    /*    text-decoration: underline;*/
+        text-decoration: underline;
     text-decoration-color: #000;
 }
+*/
 
 /* ------ CONTACT ------ */
 #contact {
