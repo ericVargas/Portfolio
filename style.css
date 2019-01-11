@@ -156,7 +156,8 @@ html {
     color: #000;
 }
 
-.button:hover, .links a:hover {
+.button:hover,
+.links a:hover {
     background-color: rgba(252, 172, 69, 1.0)
         /*var(--my-color)*/
     ;
@@ -229,18 +230,18 @@ html {
     margin-top: 20px;
 }
 
-.links{
+.links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
 }
 
-.links a{
+.links a {
     display: inline-block;
     color: #000;
     background: none;
     padding: 5px 30px;
-    margin: 10px 5px;
+    margin: 15px 5px;
     font-weight: 400;
     text-decoration: none;
     border-radius: 50px;
@@ -249,6 +250,10 @@ html {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+}
+
+#info{
+    visibility: hidden;
 }
 
 /* ------ CONTACT ------ */
@@ -483,19 +488,19 @@ footer {
         font-weight: 600;
         font-size: 0.6rem;
     }
-    
+
     .project-list {
         grid-template-columns: repeat(1, 1fr);
     }
-    
-     .project h2 {
+
+    .project h2 {
         font-size: 1rem;
         font-weight: 600;
     }
-    
-    .links a{
-    font-size: 0.9rem;
-    font-weight: 400;
-}
+
+    .links a {
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
 
 }
