@@ -215,7 +215,6 @@ html {
 }
 
 /* ------ PORTFOLIO ------ */
-
 .project-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -242,40 +241,15 @@ html {
     background: none;
     padding: 5px 30px;
     margin: 10px 5px;
-/*    font-size: inherit;*/
     font-weight: 400;
     text-decoration: none;
-/*    letter-spacing: 1px;*/
     border-radius: 50px;
     border: 2px solid #000;
-/*    overflow: hidden;*/
-/*    outline: none;*/
     position: relative;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
-
-/*
-.project a {
-    text-decoration: none;
-    font-weight: 300;
-    background-color: #000;
-    border-radius: 50px;
-    color: #fff;
-    padding: 10px;
-    place-self: stretch center;
-}
-*/
-
-/*
-.project a:hover {
-    font-weight: 500;
-    color: var(--my-color);
-        text-decoration: underline;
-    text-decoration-color: #000;
-}
-*/
 
 /* ------ CONTACT ------ */
 #contact {
