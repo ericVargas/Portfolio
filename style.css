@@ -483,5 +483,19 @@ footer {
         font-weight: 600;
         font-size: 0.6rem;
     }
+    
+    .project-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+     .project h2 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .links a{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
 
 }
