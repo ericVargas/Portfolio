@@ -13,7 +13,8 @@
 body,
 html {
     height: 100%;
-/*
+    scroll-behavior: smooth;
+    /*
     overflow-x: hidden;
     overflow-y: scroll;
 */
@@ -77,6 +78,13 @@ html {
     color: var(--my-color);
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 .landing {
@@ -254,7 +262,7 @@ html {
     transition: all 0.3s;
 }
 
-#info{
+#info {
     visibility: hidden;
 }
 
