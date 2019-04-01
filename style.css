@@ -24,14 +24,6 @@ html {
     margin-top: 50px;
 }
 
-.margin-top-60 {
-    margin-top: 60px;
-}
-
-.margin-top-80 {
-    margin-top: 80px;
-}
-
 .text-center {
     text-align: center;
 }
@@ -236,13 +228,19 @@ html {
     justify-self: center;
 }
 
+.project-img {
+    overflow: hidden;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+}
+
 .project-img iframe {
     width: 300px;
     height: 300px;
-    border-radius: 30px;
-    border: 2px #000 solid;
-/*    overflow: hidden;*/
-    display: none;
+    border: 2px solid #000;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    overflow: hidden;
 }
 
 .project h2 {
@@ -280,7 +278,7 @@ html {
     background-color: var(--bg-dark);
 }
 
-.fields{
+.fields {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -288,21 +286,22 @@ html {
     margin: 0 auto;
 }
 
-.field input{
+.field input {
     width: 94%;
 }
 
-.field:nth-child(3){
+.field:nth-child(3) {
     grid-column: 1/ span 2;
     width: 97%;
 }
 
-textarea{
+textarea {
     resize: none;
-    width: 100%;    
+    width: 100%;
 }
 
-.field input, textarea{
+.field input,
+textarea {
     border: 2px solid #000;
     border-radius: 10px;
     padding: 10px;
@@ -494,7 +493,8 @@ footer {
     }
 
     #skills,
-    #portfolio {
+    #portfolio,
+    #contact {
         padding-top: 90px;
     }
 
@@ -546,6 +546,13 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    /*
+    .project-img iframe {
+        width: 75%;
+        height: 75%;
+    }
+*/
+
     .project h2 {
         font-size: 1rem;
         font-weight: 600;
@@ -554,6 +561,25 @@ footer {
     .links a {
         font-size: 0.9rem;
         font-weight: 400;
+    }
+
+    .fields {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        width: 60%;
+        margin-left: 17%;
+    }
+
+    .field:nth-child(3),
+    .field input {
+        grid-column: 1/ span 1;
+        width: 100%;
+    }
+
+    .field input,
+    textarea {
+        padding: 10px;
+        font-size: 0.9rem;
     }
 
 }
