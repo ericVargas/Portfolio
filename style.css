@@ -308,6 +308,10 @@ textarea {
     font-size: 1.2rem;
 }
 
+#captcha{
+    display: inline-block;
+}
+
 /* ------ SOCIAL ICONS ------ */
 .social-icon {
     list-style: none;
