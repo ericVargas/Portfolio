@@ -14,10 +14,9 @@ body,
 html {
     height: 100%;
     scroll-behavior: smooth;
-    /*
     overflow-x: hidden;
     overflow-y: scroll;
-*/
+
     /* To remove weird margin on mobile view */
 }
 
@@ -116,7 +115,8 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--bg-dark);
-    overflow: hidden;
+    /*    overflow: hidden;*/
+    padding-top: 88px;
 }
 
 .about-pic {
@@ -453,6 +453,11 @@ footer {
         height: 40px;
         line-height: 40px;
         font-size: 1.2rem;
+    }
+
+    #skills,
+    #portfolio {
+        padding-top: 90px;
     }
 
     .section-title h2 {
