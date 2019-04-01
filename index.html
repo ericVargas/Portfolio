@@ -129,6 +129,7 @@
 
         <div class="project-list">
             <div class="project text-center">
+                <div class="project-img"><iframe src="https://anatomy-physiology-api.herokuapp.com/" scrolling="no"></iframe></div>
                 <h2>Human Anatomy</h2>
                 <div class="links">
                     <a href="https://anatomy-physiology-api.herokuapp.com/">Site</a>
@@ -137,6 +138,7 @@
             </div>
 
             <div class="project text-center">
+                <div class="project-img"><iframe src="https://ericvargas.github.io/Dermaholic/" scrolling="no"></iframe></div>
                 <h2>Dermaholic</h2>
                 <div class="links">
                     <a onmouseover="show()" onmouseout="hide()" href="https://ericvargas.github.io/Dermaholic/">Site</a>
@@ -146,6 +148,7 @@
             </div>
 
             <div class="project text-center">
+                <div class="project-img"><iframe src="https://ericvargas.github.io/meteors/" scrolling="no"></iframe></div>
                 <h2>Meteors!</h2>
                 <div class="links">
                     <a href="https://ericvargas.github.io/meteors/">Play</a>
@@ -168,12 +171,34 @@
         </div>
 
         <div>
+            <form action="POST" data-netlify="true">
+                <div class="fields">
+                    <div class="field">
+                        <input type="text" name="name" id="name" placeholder="Name" />
+                    </div>
+                    <div class="field">
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                    </div>
+                    <div class="field">
+                        <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+                    </div>
+                    <div class="text-center" data-netlify-recaptcha="true"></div>
+                </div>
+               <div class="text-center">
+                    <input type="submit" value="Send Message" class="button button-dark text-center" />
+                </div>
+            </form>
+        </div>
+
+        <!--
+        <div>
             <form action="mailto:eric.vargas719@gmail.com" method="post">
                 <div class="text-center">
                     <button type="submit" class="button button-dark text-center">Email Me</button>
                 </div>
             </form>
         </div>
+-->
 
         <div class="margin-top-80 text-center">
             <ul class="social-icon">
@@ -192,6 +217,4 @@
     </footer>
 
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>

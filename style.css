@@ -14,7 +14,7 @@ body,
 html {
     height: 100%;
     scroll-behavior: smooth;
-/*    overflow-x: hidden;*/
+    /*    overflow-x: hidden;*/
     overflow-y: scroll;
 
     /* To remove weird margin on mobile view */
@@ -236,6 +236,15 @@ html {
     justify-self: center;
 }
 
+.project-img iframe {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    border: 2px #000 solid;
+/*    overflow: hidden;*/
+    display: none;
+}
+
 .project h2 {
     margin-top: 20px;
 }
@@ -269,6 +278,35 @@ html {
 /* ------ CONTACT ------ */
 #contact {
     background-color: var(--bg-dark);
+}
+
+.fields{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.field input{
+    width: 94%;
+}
+
+.field:nth-child(3){
+    grid-column: 1/ span 2;
+    width: 97%;
+}
+
+textarea{
+    resize: none;
+    width: 100%;    
+}
+
+.field input, textarea{
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
 }
 
 /* ------ SOCIAL ICONS ------ */
