@@ -308,7 +308,7 @@ textarea {
     font-size: 1.2rem;
 }
 
-#captcha{
+#captcha {
     display: inline-block;
     padding-top: 10px;
     margin-top: 10px;
@@ -552,12 +552,19 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    /*
-    .project-img iframe {
-        width: 75%;
-        height: 75%;
+    .project-img {
+        overflow: hidden;
+        -moz-border-radius: 45px;
+        border-radius: 45px;
     }
-*/
+
+    .project-img iframe {
+        width: 200px;
+        height: 200px;
+        -moz-border-radius: 35px;
+        border-radius: 35px;
+    }
+
 
     .project h2 {
         font-size: 1rem;
