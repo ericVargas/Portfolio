@@ -310,6 +310,8 @@ textarea {
 
 #captcha{
     display: inline-block;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
 /* ------ SOCIAL ICONS ------ */
@@ -581,7 +583,8 @@ footer {
     }
 
     .field input,
-    textarea {
+    textarea,
+    #captcha{
         padding: 10px;
         font-size: 0.9rem;
     }
