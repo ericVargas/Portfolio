@@ -583,10 +583,13 @@ footer {
     }
 
     .field input,
-    textarea,
-    #captcha{
+    textarea {
         padding: 10px;
         font-size: 0.9rem;
+    }
+    
+    #captcha{
+        width: 60%;
     }
 
 }
