@@ -558,8 +558,10 @@ footer {
 
     .project-img {
         overflow: hidden;
-        -moz-border-radius: 45px;
-        border-radius: 45px;
+        -moz-border-radius: 35px;
+        border-radius: 35px;
+        width: 200px;
+        height: 200px;
     }
 
     .project-img iframe {
@@ -568,7 +570,6 @@ footer {
         -moz-border-radius: 35px;
         border-radius: 35px;
     }
-
 
     .project h2 {
         font-size: 1rem;
