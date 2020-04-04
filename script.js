@@ -7,3 +7,10 @@ function show() {
 function hide() {
     info.style.visibility = "hidden";
 }
+
+$('.project').each(function () {
+    let $thisProject = $(this);
+    $thisProject.click(function () {
+        $thisProject.toggleClass('flipped');
+    });
+});
