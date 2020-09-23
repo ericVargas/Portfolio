@@ -616,6 +616,10 @@ footer {
         box-shadow: inset 23px 23px 46px #d9d9d9, 
             inset -23px -23px 46px #ffffff;
     }
+    
+    .back p {
+        font-size: 1rem;
+    }
 
     .back a {
         font-size: 0.9rem;

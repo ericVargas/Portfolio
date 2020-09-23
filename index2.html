@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Next Developer!</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#fcac45">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#8d8d8d">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--  Navigation  -->
+    <div id="home"></div>
+    <div class="top-container sticky">
+        <nav>
+            <ul>
+                <li class="header">Eric Vargas</li>
+                <li></li><!-- creating blank spaces for grid nav -->
+                <li class="small-screen"></li>
+                <li class="small-screen"></li>
+                <li class="small-screen"></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="landing">
+        <div class="land-button text-center">
+            <a id="land-btn" class="button" href="#portfolio">View Portfolio</a>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+        <div class="about-pic"></div>
+        <div class="about-me section-padding">
+            <h2>About Me</h2>
+            <p>Once as a child, my uncle gifted me a whole desktop computer. Not a prebuilt one from the store but separate individual components and a Windows XP disc. Together we assembled it and installed the OS, I was instantly hook into technology and programming.<br><br>That passion led me to choose my high school of Information Technology. I was given the opportunity to take classes of computer hardware, basic web development with Dreamweaver and animation with Flash (both programs were owned by Macromedia before Adobe bought them along with Fireworks).<br><br>Later on in college I studied the art of Game Design and Development where I was introduced to Visual Basic, C#, and C++. A few years later, I was accepted into TechHire Open Code, an immersive course into web development in conjunction with LaGuardia Community College and General Assembly. There I learned the fundamentals of HTML, CSS, and JavaScript; with NodeJS for Backend and React for Frontend.
+            </p>
+        </div>
+    </section>
+
+    <!--  Skills  -->
+    <section id="skills" class="section-padding">
+        <div class="section-title text-center">
+            <h2>My Skills</h2>
+            <p>These are the technologies I have used to create my work.</p>
+        </div>
+
+        <div class="details-grid margin-top-50">
+            <div class="skills-detail">
+                <i class="fs devicon-html5-plain colored"></i>
+                <h3>HTML5</h3>
+            </div>
+
+            <div class="skills-detail">
+                <i class="fs devicon-css3-plain colored"></i>
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="skills-detail">
+                <i class="fs devicon-javascript-plain colored"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skills-detail">
+                <i class="fs devicon-nodejs-plain colored"></i>
+                <h3>Node JS</h3>
+            </div>
+
+            <div class="skills-detail">
+                <i class="fs devicon-express-original colored"></i>
+                <h3>Express</h3>
+            </div>
+
+            <div class="skills-detail">
+                <i class="fs devicon-react-original colored"></i>
+                <h3>React</h3>
+            </div>
+
+            <div class="skills-detail">
+                <i class="fs devicon-git-plain colored"></i>
+                <h3>Git</h3>
+            </div>
+
+            <div class="skills-detail">
+                <i class="fs devicon-heroku-plain colored"></i>
+                <h3>Heroku</h3>
+            </div>
+
+            <div class="skills-detail">
+                <i class="fs devicon-postgresql-plain colored"></i>
+                <h3>PostgreSQL</h3>
+            </div>
+
+            <div class="skills-detail">
+                <i class="devicon-python-plain colored"></i>
+                <h3>Python</h3>
+            </div>
+        </div>
+
+        <div class="text-center margin-top-50">
+            <a class="button button-dark" href="#contact">Let's Discuss</a>
+        </div>
+    </section>
+
+    <!--  Portfolio  -->
+    <section id="portfolio" class="section-padding">
+        <div class="section-title text-center">
+            <h2>My Portfolio</h2>
+            <p>Here are my latest and greatest creations!</p>
+        </div>
+
+        <div class="project-list">
+            <div class="project text-center">
+                <div class="project-img"><iframe src="https://anatomy-physiology-api.herokuapp.com/" scrolling="no"></iframe></div>
+                <h2>Human Anatomy</h2>
+                <div class="links">
+                    <a href="https://anatomy-physiology-api.herokuapp.com/">Site</a>
+                    <a href="https://github.com/ericVargas/Human-Anatomy">Repo</a>
+                </div>
+            </div>
+
+            <div class="project text-center">
+                <div class="project-img"><iframe src="https://ericvargas.github.io/Dermaholic/" scrolling="no"></iframe></div>
+                <h2>Dermaholic</h2>
+                <div class="links">
+                    <a onmouseover="show()" onmouseout="hide()" href="https://ericvargas.github.io/Dermaholic/">Site</a>
+                    <a href="https://github.com/ericVargas/Dermaholic">Repo</a>
+                </div>
+                <p id="info">Login info at Github &uarr;</p>
+            </div>
+
+            <div class="project text-center">
+                <div class="project-img"><iframe src="https://ericvargas.github.io/calculator/" scrolling="no"></iframe></div>
+                <h2>Calculator</h2>
+                <div class="links">
+                    <a href="https://ericvargas.github.io/calculator/">Site</a>
+                    <a href="https://github.com/ericVargas/calculator">Repo</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center margin-top-50">
+            <a class="button button-dark" href="ericVargasResume.pdf">My Resumé</a>
+        </div>
+    </section>
+
+    <!--  Contact  -->
+    <section id="contact" class="section-padding">
+        <div class="section-title text-center">
+            <h2>Contact Me</h2>
+            <p>Any questions? Send me a message.</p>
+        </div>
+
+        <div>
+            <form action="POST" data-netlify="true">
+                <div class="fields">
+                    <div class="field">
+                        <input type="text" name="name" id="name" placeholder="Name" />
+                    </div>
+                    <div class="field">
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                    </div>
+                    <div class="field">
+                        <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div id="captcha" data-netlify-recaptcha="true"></div>
+                </div>
+                <div class="text-center">
+                    <input type="submit" value="Send Message" class="button button-dark text-center" />
+                </div>
+            </form>
+        </div>
+
+        <div class="margin-top-50 text-center">
+            <ul class="social-icon">
+                <li><a href="https://www.linkedin.com/in/ericvargas719/" target="_blank" class="icon-link linkedin fill"><i class="fab fa-linkedin"></i></a></li>
+
+                <li><a href="https://github.com/ericVargas" target="_blank" class="icon-link github fill"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--  Footer  -->
+    <footer>
+        <div class="text-center">
+            <p>Eric Vargas &copy; <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body></html>
